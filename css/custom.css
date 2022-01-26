@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 #site {
@@ -205,7 +206,7 @@ img {
 .hey-there {
   color: white;
   font-weight: 500;
-  font-size: clamp(3.5rem, 2.952rem + 9.5238vw, 15rem);
+  font-size: clamp(3rem, 0.8427rem + 10.7865vw, 15rem);
 }
 
 .intro h2 {
@@ -227,10 +228,6 @@ img {
 .hello-section {
   text-align: center;
   justify-content: center;
-}
-
-.intro {
-  margin:auto;
 }
 
 .intro>* {
@@ -262,7 +259,7 @@ img {
 }
 
 .mb-block {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/mb-background.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/mb-background.png');
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,12 +1,10 @@
 (function() {
-  // 'use strict';
+  'use strict';
 
   // make refresh go to home to avoid glitch
   window.location.replace('#home2');
   document.body.style.overflowY = "visible";
-
-  // initialze aos for fade effects
-  AOS.init();
+AOS.init();
 
   var circle = document.querySelector('#circle');
   var main = document.querySelector('#main');
@@ -18,7 +16,6 @@
   var getArrows = 2; // placeholder value to prevent error
 
   expandPt1();
-  // initFullpage();
   expandPt2();
   setScreenshotHeight()
 
@@ -29,7 +26,6 @@ function setScreenshotHeight(){
     .getPropertyValue("height");
   var screenshotContainer = document.querySelectorAll(
     '.screenshotContainer');
-
   $('.screenshot-scroll').height(screenshotHeight);
   $('.mobile-img').height(screenshotHeight);
 }
@@ -43,11 +39,12 @@ function setScreenshotHeight(){
     circle.classList.remove('circle');
     circle.classList.add('full-screen');
     circle.classList.add('clipy');
+    // reveal the first section first
     section[0].classList.remove('shrink');
     $("#main").css("display", "block");
-    // reveal the first section first
+    // Initialize AOS after circle expands
+    // AOS.init({disable: 'mobile'});
   }
-
 
   // Bring the remaining elements back to normal ::::::::::::::::::::::::::::::
   function expandPt2() {
@@ -62,53 +59,5 @@ function setScreenshotHeight(){
       landh1.style.display = 'none';
     }, 1000); // set timeout ends
   }
-
-  // Modals ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-  // Mobile menu::::::::::::::::::::::::::::::::::::::::::::::::::::
-  // var mobOverlay = document.querySelector('.mob-overlay');
-  // var mobMenu = document.querySelector('.fa-bars');
-  //
-  // mobMenu.onclick = function() {
-  //   $('.mob-overlay').fadeIn();
-  // };
-  // $('.fa-close').click(function() {
-  //   $('.mob-overlay').fadeOut();
-  // });
-  //
-  // // close contact
-  // $('.closeContact').click(function() {
-  //   $('.contactModal').fadeOut();
-  //   $('.contactContainer').fadeOut();
-  //   $('.contactContainer').css('display', 'none');
-  //   $('.contactModal').css('display', 'none');
-  // });
-  // $('.contactContainer').click(function() {
-  //   $('.contactContainer').fadeOut();
-  //   $('.contactModal').fadeOut();
-  //   $('.contactContainer').css('display', 'none');
-  //   $('.contactModal').css('display', 'none');
-  // });
-  //
-  // // Contact Modal ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-  // var contactBtn = document.querySelectorAll('.contact')
-  // for (var i = 0; i < contactBtn.length; i++) {
-  //   contactBtn[i].onclick = function() {
-  //     $('.contactContainer').css('display', 'block');
-  //     $('.contactModal').css('display', 'flex');
-  //   }
-  // }
-  // // close contact
-  // $('.closeContact').click(function() {
-  //   $('.contactModal').fadeOut();
-  //   $('.contactContainer').fadeOut();
-  // });
-  // $('.contactContainer').click(function() {
-  //   $('.contactContainer').fadeOut();
-  //   $('.contactModal').fadeOut();
-  // });
-  //
-
-
 
 }()); // iife ends

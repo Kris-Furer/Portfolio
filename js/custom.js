@@ -1,11 +1,9 @@
 (function() {
   // make refresh go to home automatically opened landing
-  window.location.replace('#home2');
+  // window.location.replace('#home2');
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-
-  AOS.init();
 
   //:::::::::::::::::::::::: Modals ::::::::::::::::::::::::::::::::::::::::
 
@@ -16,6 +14,7 @@
   mobMenu.onclick = function() {
     $('.mob-overlay').fadeIn();
   };
+
   $('.fa-close').click(function() {
     $('.mob-overlay').fadeOut();
   });
@@ -48,8 +47,9 @@
     $('.contactModal').fadeOut();
   });
 
-window.onscroll = function() {scrollFunction()};
 
+// Hide Back to top button on first screen
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     $(".fa-chevron-circle-up").css('display', 'block');

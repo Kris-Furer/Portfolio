@@ -19,7 +19,7 @@
       expandPt2();
       $('#home').removeClass("no-scroll")
       $('html').removeClass("no-scroll")
-      AOS.init();
+
     });
 
 
@@ -49,6 +49,7 @@
       section[0].classList.remove('shrink');
       $("#main").css("display", "block");
       $(".fa-chevron-down").css("display", "block");
+      AOS.init({disable: 'mobile'});
 
     }
 
