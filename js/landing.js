@@ -70,6 +70,7 @@
         section[3].classList.remove('shrink');
         section[4].classList.remove('shrink');
         section[5].classList.remove('shrink');
+        section[6].classList.remove('shrink');
         // Hide landing header
 
         landh1.style.display = 'none';

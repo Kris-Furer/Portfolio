@@ -118,7 +118,7 @@ img {
 
 .fa-chevron-circle-up:hover {
   transform: scale(1.2);
-}
+} 
 
 .fa-chevron-down {
   position: absolute;
@@ -272,6 +272,11 @@ img {
 
 .block3 {
   background: url('../img/surf-bg-1.png');
+}
+
+.threejs-block {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/threejsbg.png');
+  background-size: cover;
 }
 
 .retro-block {
@@ -798,6 +803,18 @@ img {
   color: white;
   font-size: clamp(0.9rem, 0.7826rem + 0.5872vw, 1.7rem);
 }
+
+.socials i {
+  font-size: 30px;
+  padding:20px;
+  transition: .5s ease-in-out all;
+}
+.socials i:hover {
+  font-size:42px;
+  
+}
+
+
 /* Media Queries :::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (max-width: 992px) {
   .see-more {
