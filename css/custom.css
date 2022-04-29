@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%!important;
+ 
 }
 
 #site {
@@ -972,4 +973,7 @@ img {
 .shrink {
   position: absolute;
   height: 0px;
+}
+.no-scroll {
+  overflow: hidden;
 }

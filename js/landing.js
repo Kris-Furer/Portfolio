@@ -12,19 +12,20 @@
 
 
   function pageTransistion() {
+    console.log(section);
     compressCircle();
     // Hover effect starts:::::::::::::::::::::::::::::::::::
     circle.addEventListener('mouseover', function() {
       expandPt1();
       expandPt2();
-      $('#home').removeClass("no-scroll")
-      $('html').removeClass("no-scroll")
+      
 
     });
 
 
     // Compress page and before hover ::::::::::::::::::::::::::
     function compressCircle() {
+      document.documentElement.classList.add("no-scroll");
       // Hide inner body so circle is clean
       $("#main").css("display", "none");
       $(".fa-chevron-down").css("display", "none");
@@ -47,10 +48,29 @@
       circle.classList.add('clipy');
       // reveal the first section first
       section[0].classList.remove('shrink');
+      
       $("#main").css("display", "block");
       $(".fa-chevron-down").css("display", "block");
       AOS.init({disable: 'mobile'});
 
+    }
+
+    function expandPt2() {
+      setTimeout(function() {
+        // set colour so page fades to black
+        circle.style.background = '#232428';
+        // resize remaining sections
+        section[1].classList.remove('shrink');
+        section[2].classList.remove('shrink');
+        section[3].classList.remove('shrink');
+        section[4].classList.remove('shrink');
+        section[5].classList.remove('shrink');
+        section[6].classList.remove('shrink');
+        document.documentElement.classList.remove("no-scroll");
+        // Hide landing header
+        landh1.style.display = 'none';
+      }, 900); // set timeout ends
+     
     }
 
     // Set mobile and scrolling images to same height as screenshot
@@ -60,21 +80,6 @@
     $('.screenshot-scroll').height(screenshotHeight);
     $('.mobile-img').height(screenshotHeight);
     // Bring the remaining elements back to normal ::::::::::::::::::::::::::
-    function expandPt2() {
-      setTimeout(function() {
-        // set colour so page fades to black
-        circle.style.background = '#232428';
-        // rezize remaining sections
-        section[1].classList.remove('shrink');
-        section[2].classList.remove('shrink');
-        section[3].classList.remove('shrink');
-        section[4].classList.remove('shrink');
-        section[5].classList.remove('shrink');
-        section[6].classList.remove('shrink');
-        // Hide landing header
-
-        landh1.style.display = 'none';
-      }, 1000); // set timeout ends
-    }
+   
   }
 }());
