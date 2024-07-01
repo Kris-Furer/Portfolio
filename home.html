@@ -8,12 +8,14 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <title>Kris Furer | Web Development</title>
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- Fade effects -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- font awesome -->
@@ -22,13 +24,7 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <div class='dark-bg contactContainer'></div>
-<div class='light-bg contactModal'>
-  <div class='content'>
-    <i class='fa fa-times closeContact' aria-hidden='true'></i>
-    <h3>Contact me</h3>
-    <h2 class='email'>Krisfurer@gmail.com</h2>
-  </div>
-</div>
+
 
 <!-- Back to top ------------------------------------------------------------>
 <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
@@ -37,7 +33,27 @@
 
 
 <body id='home2'>
-  <div class="landing-wrap" data-aos="fade-in" data-aos-duration="2500">
+
+  <!-- Contact Nodal------------------------------------------------>
+  <div class='dark-bg contactContainer'></div>
+  <div class='light-bg contactModal'>
+    <div class='content'>
+      <i class='fa fa-times closeContact' aria-hidden='true'></i>
+      <h3>Contact me</h3>
+      <a href="mailto:krisfurer@gmail.com">
+        <h2 class='email'>Krisfurer@gmail.com</h2>
+      </a>
+    </div>
+  </div>
+
+  <!-- Back to top ------------------------------------------------------------>
+
+
+
+  <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  <!-- Scroll Down -->
+  <a href="#project1"><i class="fa fa-chevron-down m-auto" aria-hidden="true"></i></a>
+  <div class="landing-wrap">
     <h1 class='landing-h1 landing-text display-1'>Kris Furer</h1>
     <h3 class='landing-text'>Web Design | Development</h3>
   </div>
@@ -69,32 +85,136 @@
         <div id='top' class="block block1 py-5">
           <div class="vertical-center hello-section">
             <div class="intro m-auto">
-              <h1 data-aos="fade-right" class='hey-there ' id='h1Main'>Oh hey there!</h1>
+              <h1 class='hey-there ' id='h1Main'>Oh hey there!</h1>
               <h2 class='fw-light'>I'm Kris, I design and develop websites</h2>
-              <p  class='about-me '>Of course I do other things too.. I like making music, brewing beer, baking bread and learning new things. But you're probably here for my work, just scroll down.</p>
+              <p class='about-me '>I do other things too.. I like making music, brewing beer, baking bread and learning
+                new things. But you're probably here for my work, just scroll down.</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- :::::::::::::::::::::::  Projects Start  :::::::::::::::::::::::::::::  -->
+      <!--  Reollect Section --------->
+      <div id='project1' class="section">
+        <div class="block recollect-block row py-5">
+          <div class="col-12 col-md-5 relative">
+            <div class="screen-wrap">
+              <div class="text-wrapper">
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
+                  <p class="mb-1">Frontend Development</p>
+                  <h2 class="display-2 mb-0 project-heading">Recollect CMS</h2>
+                  <!-- <h3 class="project-subhead h3 pb-3">Custom Wordpress Theme</h3> -->
+                  <p class='project-blurb pb-3'>While working at Recollect I had the oppurtunity to work with clients
+                    from around the globe. Here's a few snaps of some of my favourite projects</p>
 
+                  <a href="https://collected.uwa.edu.au/" target="_blank">
+                    <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See It
+                      Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </span></div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-7">
+            <div class="project-content p-md-5">
+              <div class="screenshot-container mb-5">
+                <a href="https://collected.uwa.edu.au/" target="_blank">
+                  <img id='screenshot1' class='screenshot' src="img/uwa-screen.png" alt="Screenshot of UWA Collected">
+                </a>
+              </div>
+              <div class="screenshot-container mb-5">
+                <a href="https://antarctic-heritage.recollect.co.nz/" target="_blank">
+                  <img src="img/ah-screen.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college"></a>
+              </div>
+              <div class="screenshot-container">
+                <a href="https://westernbay.recollect.co.nz/" target="_blank">
+                  <img src="img/wb-screen.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college"></a>
+              </div>
+            </div>
+          </div>
+          <!-- mobile button -->
+          <a class='d-md-none py-5' href="https://collected.uwa.edu.au/" target="_blank">
+            <div data-aos="fade-right" data-aos-duration="1500" class='see-more'>See It Live<span><i
+                  class="fa fa-angle-right" aria-hidden="true"></i>
+              </span></div>
+          </a>
+        </div>
+      </div>
+      <!--  Reollect Section Ends -->
 
       <!-- Masterton Builders Section ----------------------------------------------->
-      <div id='project1' class="section section2">
+      <div id='project1' class="section">
         <div class="block mb-block row py-5">
           <div class="col-12 col-md-5 relative">
             <div class="screen-wrap">
               <div class="text-wrapper">
-                <div class="project-text px-3 py-md-5 "data-aos="fade-left" data-aos-duration="1500">
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
                   <p class="mb-1"> Design | Development </p>
-                  <h2 class="display-2 mb-0 project-heading"> Masterton Builders
-                    <h3 class="project-subhead h3 pb-3">Custom Wordpress Theme</h3>
-                    <p class='project-blurb pb-3'>As part of an assignment for Yoobee College I designed and developed a custom wordpress theme for a building company. The theme is highly customizable and could be used as the base for a variety of
-                      service websites.</p>
+                  <h2 class="display-2 mb-0 project-heading"> Masterton Builders</h2>
+                  <h3 class="project-subhead h3 pb-3">Custom Wordpress Theme</h3>
+                  <p class='project-blurb pb-3'>I designed and developed a custom wordpress theme for a building
+                    companies. The theme is highly customizable and could be used as the base for a variety of
+                    service websites. It has also been by a landscaping business - Southery Creations. Click below to
+                    see it in action.</p>
 
-                    <a href="http://kris.yoobee.site" target="_blank">
-                      <div data-aos="fade-left" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  <a href="https://southerlycreations.co.nz/" target="_blank">
+                    <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See It
+                      Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </span></div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-7">
+            <div class="project-content p-md-5">
+              <div class="screenshot-container mb-5">
+                <a href="https://southerlycreations.co.nz/" target="_blank">
+                  <img id='screenshot1' class='screenshot' src="img/m-build.png"
+                    alt="Screenshot of a landing page made for an assignment at Yoobee college">
+                </a>
+              </div>
+              <div class="screenshot-container">
+                <a href="https://southerlycreations.co.nz/" target="_blank">
+                  <img src="img/contact-sc.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college"></a>
+              </div>
+            </div>
+          </div>
+          <!-- mobile button -->
+          <a class='d-md-none py-5' href="https://southerlycreations.co.nz/" target="_blank">
+            <div data-aos="fade-right" data-aos-duration="1500" class='see-more'>See It Live<span><i
+                  class="fa fa-angle-right" aria-hidden="true"></i>
+              </span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Three JS Section Starts ------------------------------------------------>
+      <div class="section">
+        <div class="block threejs-block row py-5">
+          <div class="col-12 col-md-5 relative">
+            <div class="screen-wrap">
+              <div class="text-wrapper">
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
+                  <p class="mb-1"> Design | Development </p>
+                  <h2 class="display-2 mb-0 project-heading"> Audio Visualizer
+                    <h3 class="project-subhead h3 pb-3">Three JS Project</h3>
+                    <p class='project-blurb pb-3'>A light hearted project to help me get my head around Threejs. This is
+                      a 3D audio visualizer that responds to different samples. The music is one of my many unfinished
+                      demos lying around in the depths of my Ableton folder</p>
+
+                    <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
+                      <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See
+                        It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
                         </span></div>
                     </a>
 
@@ -106,87 +226,43 @@
           <div class="col-12 col-md-7">
             <div class="project-content p-md-5">
               <div class="screenshot-container mb-5">
-                <a href="http://kris.yoobee.site" target="_blank">
-                  <img id='screenshot1' class='screenshot' src="img/m-build.png" alt="Screenshot of a landing page made for an assignment at Yoobee college">
+                <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
+                  <img class='screenshot' src="img/threejs1.png"
+                    alt="Screenshot of a landing page made for an assignment at Yoobee college">
                 </a>
               </div>
               <div class="screenshot-container">
-                <a href="http://kris.yoobee.site" target="_blank">
-                  <img src="img/contact-sc.png" alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college"></a>
+                <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
+                  <img src="img/threejs2.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at yoobee college"></a>
               </div>
             </div>
           </div>
           <!-- mobile button -->
-          <a class='d-md-none py-5' href="http://kris.yoobee.site" target="_blank">
-            <div data-aos="fade-left" data-aos-duration="1500" class='see-more'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
+          <a class='d-md-none py-5' href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
+            <div data-aos="fade-right" data-aos-duration="1500" class='see-more'>See It Live<span><i
+                  class="fa fa-angle-right" aria-hidden="true"></i>
               </span></div>
           </a>
         </div>
       </div>
-
-
-
-      <!-- Discover New Zealand Starts------------------------------------->
-      <div class="section section2">
-        <div class="block block2 row py-5">
-          <div class="col-12 col-md-5 relative">
-            <div class="screen-wrap">
-              <div class="text-wrapper">
-
-                <div class="project-text px-3 py-md-5 " data-aos="fade-left" data-aos-duration="1500">
-                  <p class="mb-1"> Design | Development</p>
-                  <h2 class=" text-nowrap display-2 mb-0 project-heading">Discover <br> New Zealand</h2>
-                  <h3 class="project-subhead h3 pb-3">Accommodation Booking Website</h3>
-                  <p class='project-blurb pb-3'>As part of an assignment for Yoobee college I was tasked with designing and developing a single page application that allowed users to search and book accommodation.
-                  </p>
-                  <a href="accomodation.html">
-                    <div data-aos="fade-left" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See Case Study <span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                      </span></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 col-md-7">
-            <div class="project-content p-md-5">
-              <a href="accomodation.html">
-                <div class="screenshot-container mb-5">
-                  <img id='screenshot1' class='screenshot' src="img/acc1.png" alt="Screenshot of a landing page made for an assignment at yoobee college">
-                </div>
-              </a>
-              <a href="accomodation.html">
-                <div class="screenshot-container">
-                  <img src="img/acc2.png" alt="Screenshot of search results page -part of a website made for an assignment at yoobee college">
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <a class='d-md-none py-5' href="accomodation.html" target="_blank">
-            <div data-aos="fade-left" data-aos-duration="1500" class='see-more hover-underline'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
-              </span></div>
-          </a>
-        </div>
-      </div>
-
-
       <!-- Surfgroove ----------------------------------------------------------->
-      <div class="section section3">
+      <div class="section">
         <div class="block block3 row py-5">
           <div class="col-12 col-md-5 relative">
             <div class="screen-wrap">
               <div class="text-wrapper">
 
-                <div class="project-text px-3 py-md-5 " data-aos="fade-left" data-aos-duration="1500">
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
                   <p class="mb-1"> UX Research | Design | Development</p>
                   <h2 class="display-2 mb-0 project-heading">Surfgroove
                     <h3 class="project-subhead h3 pb-3">Conservation Society</h3>
-                    <p class='project-blurb pb-3'>As part of an assignment for Yoobee college I was tasked with re-designing and developing a brochure website for a Surfbreak Protection Society.
+                    <p class='project-blurb pb-3'>As part of an assignment for Yoobee college I was tasked with
+                      re-designing and developing a brochure website for a Surf-break Protection Society.
                     </p>
                     <a href="https://kris-furer.github.io/Surfgroove/" target="_blank">
-                      <div data-aos="fade-left" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See it live<span> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See
+                        it live<span> <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </span></div>
                     </a>
                 </div>
@@ -200,145 +276,164 @@
             <div class="project-content p-md-5">
               <a href="https://kris-furer.github.io/Surfgroove/" target="_blank">
                 <div class="screenshot-container mb-5">
-                  <img id='screenshot1' class='screenshot' src="img/surf-resize.png" alt="Screenshot of a landing page made for an assignment at Yoobee college">
+                  <img class='screenshot' src="img/surf-resize.png"
+                    alt="Screenshot of a landing page made for an assignment at Yoobee college">
+                </div>
+              </a>
+
+              <a href="https://kris-furer.github.io/Surfgroove/" target="_blank">
+                <div class="screenshot-container">
+                  <img src="img/surf-3.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college">
+                </div>
               </a>
             </div>
-            <a href="https://kris-furer.github.io/Surfgroove/" target="_blank">
-              <div class="screenshot-container">
-                <img src="img/surf-3.png" alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college">
-              </div>
-            </a>
+
+            <!-- Col ends -->
           </div>
-
-          <!-- Col ends -->
+          <a class='d-md-none py-5' href="https://kris-furer.github.io/Surfgroove/" target="_blank">
+            <div data-aos="fade-right" data-aos-duration="1500" class='see-more hover-underline'>See It Live<span><i
+                  class="fa fa-angle-right" aria-hidden="true"></i>
+              </span></div>
+          </a>
+          <!-- Block ends -->
         </div>
-        <a class='d-md-none py-5' href="https://kris-furer.github.io/Surfgroove/" target="_blank">
-          <div data-aos="fade-left" data-aos-duration="1500" class='see-more hover-underline'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
-            </span></div>
-        </a>
-        <!-- Block ends -->
       </div>
-    </div>
-    <div class="section section6">
-      <div class="block threejs-block row py-5">
-        <div class="col-12 col-md-5 relative">
-          <div class="screen-wrap">
-            <div class="text-wrapper">
-              <div class="project-text px-3 py-md-5 "data-aos="fade-right" data-aos-duration="1500">
-                <p class="mb-1"> Design | Development </p>
-                <h2 class="display-2 mb-0 project-heading"> Audio Visualizer
-                  <h3 class="project-subhead h3 pb-3">Three JS Project</h3>
-                  <p class='project-blurb pb-3'>A light hearted project to help me get my head around Threejs. This is a 3D audio visualizer that responds to different samples. The music is one of my many unfinished demos lying around in the depths of my Ableton folder</p>
 
-                  <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
-                    <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
+
+      <!-- Discover New Zealand Starts------------------------------------->
+      <div class="section section2">
+        <div class="block block2 row py-5">
+          <div class="col-12 col-md-5 relative">
+            <div class="screen-wrap">
+              <div class="text-wrapper">
+
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
+                  <p class="mb-1"> Design | Development</p>
+                  <h2 class=" text-nowrap display-2 mb-0 project-heading">Discover <br> New Zealand</h2>
+                  <h3 class="project-subhead h3 pb-3">Accommodation Booking Website</h3>
+                  <p class='project-blurb pb-3'>As part of an assignment for Yoobee college I was tasked with designing
+                    and developing a single page application that allowed users to search and book accommodation.
+                  </p>
+                  <a href="accomodation.html">
+                    <div data-aos="fade-right" data-aos-duration="1500" class='see-more d-none d-md-inline my-3'>See
+                      Case Study <span> <i class="fa fa-angle-right" aria-hidden="true"></i>
                       </span></div>
                   </a>
-
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-7">
-          <div class="project-content p-md-5">
-            <div class="screenshot-container mb-5">
-              <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
-                <img id='screenshot1' class='screenshot' src="img/threejs1.png" alt="Screenshot of a landing page made for an assignment at Yoobee college">
+
+          <div class="col-12 col-md-7">
+            <div class="project-content p-md-5">
+              <a href="accomodation.html">
+                <div class="screenshot-container mb-5">
+                  <img class='screenshot' src="img/acc1.png"
+                    alt="Screenshot of a landing page made for an assignment at yoobee college">
+                </div>
+              </a>
+              <a href="accomodation.html">
+                <div class="screenshot-container">
+                  <img src="img/acc2.png"
+                    alt="Screenshot of search results page -part of a website made for an assignment at yoobee college">
+                </div>
               </a>
             </div>
-            <div class="screenshot-container">
-              <a href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
-                <img src="img/threejs2.png" alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college"></a>
-            </div>
           </div>
+
+          <a class='d-md-none py-5' href="accomodation.html" target="_blank">
+            <div data-aos="fade-right" data-aos-duration="1500" class='see-more hover-underline'>See It Live<span><i
+                  class="fa fa-angle-right" aria-hidden="true"></i>
+              </span></div>
+          </a>
         </div>
-        <!-- mobile button -->
-        <a class='d-md-none py-5' href="https://kris-3d-audiovisuals.netlify.app/" target="_blank">
-          <div data-aos="fade-right" data-aos-duration="1500" class='see-more'>See It Live<span><i class="fa fa-angle-right" aria-hidden="true"></i>
-            </span></div>
-        </a>
       </div>
-    </div>
 
 
 
 
 
 
-    <!-- Retrostop Section Starts ----------------------------------------------------->
-    <div class="section section5">
-      <div class="block retro-block row py-5">
-        <!-- Left Col -->
-        <div class="col-12 col-md-5 relative">
-          <div class="screen-wrap">
-            <div class="text-wrapper">
-              <div class="project-text px-3 py-md-5 " data-aos="fade-left" data-aos-duration="1500">
-                <p class="mb-1"> Backend Development | Design</p>
-                <h2 class="display-2 mb-0 project-heading"  >Retrostop</h2>
-                <h3 class="project-subhead h3 pb-3">Peer to peer marketplace app</h3>
-                <p class='project-blurb pb-3'>Working in a group, we designed and developed an app that allows users to buy and sell retro console games. My role in this project was focused on the back-end.
-                  Production tools included Node, Mongo DB, Express Js and Mongoose.
-                </p>
+      <!-- Restrostop Section Starts ----------------------------------------------------->
+      <div class="section">
+        <div class="block retro-block row py-5">
+          <!-- Left Col -->
+          <div class="col-12 col-md-5 relative">
+            <div class="screen-wrap">
+              <div class="text-wrapper">
+                <div class="project-text px-3 py-md-5 " data-aos="fade-right" data-aos-duration="1500">
+                  <p class="mb-1"> Backend Development | Design</p>
+                  <h2 class="display-2 mb-0 project-heading">Retrostop</h2>
+                  <h3 class="project-subhead h3 pb-3">Peer to peer marketplace app</h3>
+                  <p class='project-blurb pb-3'>Working in a group, we designed and developed an app that allows users
+                    to buy and sell retro console games. My role in this project was focused on the back-end.
+                    Production tools included Node, Mongo DB, Express Js and Mongoose.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
 
-        <!-- Right Col -->
-        <div class="col-12 col-md-7">
-          <div class="project-content p-md-5">
-            <!-- Img 1 -->
-            <div class="screenshot-container screenshot-container mb-5">
-              <img id='screenshot1' class='screenshot' src="img/retro-1.png" alt="Screenshot of a landing page made for an assignment at Yoobee college">
-            </div>
-            <!-- Img 2 -->
-            <div class="screenshot-scroll">
-              <img src="img/retro-2.png" alt="Screenshot of search results page -part of a website made for an assignment at Yoobee college">
+          <!-- Right Col -->
+          <div class="col-12 col-md-7">
+            <div class="project-content p-md-5">
+              <!-- Img 1 -->
+              <div class="screenshot-container screenshot-container mb-5">
+                <img class='screenshot' src="img/retro-1.png"
+                  alt="Screenshot of a landing page made for an assinment at yoobee college">
+              </div>
+              <!-- Img 2 -->
+              <div class="screenshot-scroll">
+                <img src="img/retro-2.png"
+                  alt="Screenshot of search results page -part of a website made for an assinment at yoobee college">
+              </div>
             </div>
           </div>
+          <!-- Bootstrap Col Ends -->
         </div>
-        <!-- Bootstrap Col Ends -->
       </div>
-    </div>
-    <!-- Retrostop Section ends ------------------------------------------------>
 
-    <div class="section">
-      <div class="dark-bg">
-        <div class="footer dark-bg">
-          <a class="hover-underline" href="home.html">
-            <h2 class='display-4'>Kris Furer Web</h2>
-          </a>
 
-          <div class="footer-links">
-            <a class="hover-underline" href="home.html">Home</a>
-            <span class='contact hover-underline'>Contact</span>
-            <a class="hover-underline" href="more-work.html">Gallery</a>
+
+      <!-- Footer----------------------------------------------------------------------- -->
+      <div class="section">
+        <div class="dark-bg">
+          <div class="footer dark-bg">
+            <a class="hover-underline" href="home.html">
+              <h2 class='display-4'>Kris Furer Web</h2>
+            </a>
+
+            <div class="footer-links">
+              <a class="hover-underline" href="home.html">Home</a>
+              <span class='contact hover-underline'>Contact</span>
+              <a class="hover-underline" href="more-work.html">Gallery</a>
+            </div>
+
+
           </div>
-         
+          <div class="socials text-center py-2">
+            <a target="_blank" href="https://open.spotify.com/playlist/2L4Ff8O4mJ9aJ1J1jv3yJh?si=8d5fb4db2ee94e68"><i
+                class="fa fa-spotify"></i></a>
 
-        </div>
-        <div class="socials text-center py-2">
-          <a target="_blank" href="https://open.spotify.com/playlist/2L4Ff8O4mJ9aJ1J1jv3yJh?si=8d5fb4db2ee94e68"><i class="fa fa-spotify"></i></a>
-          
-          <a target="_blank" href="https://github.com/Kris-Furer"><i class="fa fa-github"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/kris-furer/"><i class="fa fa-linkedin"></i></a>
-          
+            <a target="_blank" href="https://github.com/Kris-Furer"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kris-furer/"><i class="fa fa-linkedin"></i></a>
+
+          </div>
         </div>
       </div>
+      <!-- main wrapper ends -->
     </div>
-    <!-- main wrapper ends -->
+    <!-- Main ends -->
   </div>
-  <!-- Main ends -->
-  </div>
-  <!-- circle wrapper ends -->
 
 
-    <script src='js/jquery.js'></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src='js/custom.js'></script>
-  <script src = 'js/home.js'></script>
+  <script src='js/jquery.js'></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src='js/custom.js'></script>
+  <script src='js/home.js'></script>
 
 
 </body>

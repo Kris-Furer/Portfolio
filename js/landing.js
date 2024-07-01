@@ -12,7 +12,7 @@
 
 
   function pageTransistion() {
-    console.log(section);
+    
     compressCircle();
     // Hover effect starts:::::::::::::::::::::::::::::::::::
     circle.addEventListener('mouseover', function() {
@@ -66,6 +66,7 @@
         section[4].classList.remove('shrink');
         section[5].classList.remove('shrink');
         section[6].classList.remove('shrink');
+        section[7].classList.remove('shrink');
         document.documentElement.classList.remove("no-scroll");
         // Hide landing header
         landh1.style.display = 'none';

@@ -58,10 +58,11 @@ function setScreenshotHeight(){
       section[4].classList.remove('shrink');
       section[5].classList.remove('shrink');
       section[6].classList.remove('shrink');
+      section[7].classList.remove('shrink');
       
       // Hide landing header
       landh1.style.display = 'none';
     }, 1000); // set timeout ends
   }
-console.log(section);
+
 }()); // iife ends
